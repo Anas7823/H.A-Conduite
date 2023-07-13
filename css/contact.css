@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: Montserrat, sans-serif;
     background-color: rgb(140,197,63,1);
+    /* overflow: hidden; */
 }
 /* Début: CSS Navbar */
 .navbar{
@@ -73,7 +74,6 @@ body{
 }
 
 #contact-item:hover{
-    /* color: #fff; */
     background-color: rgb(140, 197, 63);
     transition: all 0.5s ease-out;
     border: 2px solid rgb(121, 123, 118);
@@ -81,32 +81,67 @@ body{
 }
 
 #contact-item:hover a{
-    color: #fff;
+    color: #fff !important;
     transition: all 0.5s ease-out;
 }
 
 /* Fin: CSS Navbar */
 
-.ConteinerAvis{
+.ContainerContact{
     display: flex;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     justify-content: center;
     align-items: center;
 }
 
-.avis{
-    background-color: #fff;
-    overflow: auto;
-    height: 20rem;
-    border-radius: 20px;
-    padding: 30px;
-    padding-left: 20px; 
+.Contact{
+    border: #000 3px solid;
+    border-radius: 25px;
+    width: 80%;
+    height: 70vh;
+    font-size: 'Montserrat', sans-serif;
+    font-size: 25px;
 }
 
-.ImgAvis{
+.Contact span{
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    margin-top: 20px;
+    border-bottom: #000 3px solid;
+    padding-bottom: 20px;
+}
+
+.Contact div{
+    padding: 10px;
+}
+
+.ImgContact{
     /* border: 1px solid red; */
     height: 840px; 
     width: 840px;
+}
+
+.contact-items{
+    font-size: 60px;
+}
+
+.adresse{
+    font-size: 30px;
+}
+
+.adresseDiv{
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+}
+
+.contact-items a{
+    text-decoration: none;
+    color: #000;
 }
