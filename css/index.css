@@ -89,9 +89,33 @@ body{
 
 .section{
     height: 100vh;
-    border: #000 1px solid;
+    display: flex;
+    padding: 5rem;
 }
 
 .section:nth-child(3n+2){
     background-color: rgb(140, 197, 63);
+}
+
+#TitreAutoEcole{
+    font-size: 50px;
+    font-weight: bold;
+    margin: auto 0;
+}
+
+.texteAutoEcole{
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+.imageAutoEcole{
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+.imageAutoEcole .img{
+    width: 90%;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
